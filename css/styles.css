@@ -139,6 +139,17 @@ body {
   margin-right: 50px;
 }
 
+.icon-envelope,
+.icon-smartphone {
+  margin-right: 10px;
+  fill: var(--secondary-text);
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+}
+
 .contacts-link {
   text-decoration: none;
   color: var(--secondary-text);
@@ -148,6 +159,7 @@ body {
 .contacts a:focus {
   color: var(--accent-color);
 }
+
 
 /* hero */
 
