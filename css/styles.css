@@ -19,6 +19,8 @@ html {
   --clear-black: #000000;
   --hover-accent-color: #188ce8;
   --portfolio-border: #eeeeee;
+  --icon-color-main: #afb1b8;
+   --icon-white: #ffffff;
 }
 
 h1,
@@ -69,7 +71,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 
 .logo-accent {
@@ -111,6 +113,7 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-left: 93px;
 }
 
 .nav-link {
@@ -160,6 +163,9 @@ body {
   color: var(--accent-color);
 }
 
+.contacts-link:hover svg{
+  fill: var(--accent-color);
+}
 
 /* hero */
 
@@ -168,6 +174,13 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  max-width: 1600px;
+  max-height: 600px;
+  background-position: center;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-title {
@@ -212,6 +225,17 @@ body {
 
 .visually-hidden {
   display: none;
+}
+
+.qualities-box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
 }
 
 .qualities-list {
@@ -275,6 +299,45 @@ body {
   flex-wrap: wrap;
 }
 
+.team-box {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.socialnet-list {
+  display: flex;
+  margin: 16px auto 0;
+  width: 206px;
+  justify-content: space-between;
+
+}
+
+.socialnet-link {
+display: block;
+padding: 12px;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+fill: var(--icon-color-main);
+}
+
+.socialnet-link:hover,
+.socialnet-link:focus {
+  background-color: var(--accent-color);
+}
+
+.socialnet-link.socialnet-icon {
+  fill: var(--icon-color-main)
+}
+
+.socialnet-link:hover .socialnet-icon,
+.socialnet-link:focus .socialnet-icon {
+  background-color: var(--accent-color);
+  fill: var(--icon-white);
+}
+
+
+
 .team-item {
   list-style-type: none;
   background-color: var(--main-white);
@@ -292,7 +355,6 @@ body {
   font-weight: 500;
   line-height: 1.18;
   font-size: 16px;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -300,8 +362,51 @@ body {
   color: var(--secondary-text);
   line-height: 1.18;
   font-size: 16px;
-  padding-bottom: 30px;
 }
+
+/* section clients */
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients .section-title {
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list .clients-item {
+  border: 1px solid var(--icon-color-main);
+  border-radius: 4px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+}
+
+.clients-link .clients-icon {
+  fill: var(--icon-color-main);
+}
+
+.clients-list .clients-item:hover,
+.clients-list .clients-item:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
 
 /* ---------portfolio main content----------- */
 .portfolio-main {
@@ -391,6 +496,10 @@ body {
   padding-bottom: 60px;
 }
 
+.footer .container {
+  display: flex;
+}
+
 .logo-footer {
   color: var(--main-white);
 }
@@ -422,4 +531,55 @@ body {
 .contacts-list:hover,
 .contacts-list:focus {
   color: var(--accent-color);
+}
+
+.logo-addres {
+  margin-right: 70px;
+}
+
+.join-in {
+  padding-top: 12px;
+}
+
+.join-in.title {
+  color: var(--main-white);
+  text-transform: uppercase;
+  font-size: inherit;
+  line-height: 1.14;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-socialnet.list {
+  display: flex;
+  margin: 20px auto 0;
+  width: 206px;
+  justify-content: space-between;
+
+}
+
+.footer-socialnet .link {
+display: block;
+padding: 12px;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+fill: var(--main-white);
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+}
+
+.footer-socialnet .link:hover,
+.footer-socialnet .link:focus {
+  background-color: var(--accent-color);
+}
+
+.socialnet-link.socialnet-icon {
+  fill: var(--icon-color-main)
+}
+
+.socialnet-link:hover .socialnet-icon,
+.socialnet-link:focus .socialnet-icon {
+  background-color: var(--accent-color);
+  fill: var(--icon-white);
 }
