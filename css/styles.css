@@ -163,7 +163,11 @@ body {
   color: var(--accent-color);
 }
 
-.contacts-link:hover svg{
+.contacts-link:hover svg {
+  fill: var(--accent-color);
+}
+
+.contacts-link:focus svg {
   fill: var(--accent-color);
 }
 
